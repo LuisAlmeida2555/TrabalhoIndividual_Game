@@ -1,0 +1,16 @@
+.content-container {
+  padding-top: 20px;
+}
+
+.content-container {
+  padding-left: 220px;
+  background-image: url(../../../assets/media/arena.png);
+  height: 625px;
+}
+
+.img2{
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+
+}
+
