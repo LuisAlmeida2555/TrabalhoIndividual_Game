@@ -13,7 +13,7 @@ export class RgpinfoService {
   linkSignUp = 'http://moreiramoises.pt/server/apis/signup.php';
   linkCreateChar = 'http://moreiramoises.pt/server/apis/createChart.php';
   linkGetArma = "http://moreiramoises.pt/server/apis/createArma.php";
-  linkCharId = 'http://moreiramoises.pt/server/apis/get/getChar.php?PlayerID=';
+  linkGetChar = 'http://moreiramoises.pt/server/apis/get/getChar.php?PlayerID=';
   linkRndChar = 'http://moreiramoises.pt/server/apis/get/getRandomChar.php?';
   linkUpdateChar = 'http://moreiramoises.pt/server/apis/updateChart.php';
   linkinimigo = 'http://moreiramoises.pt/server/apis/get/getRandomChar.php?';
@@ -39,11 +39,11 @@ export class RgpinfoService {
   }
 
   //Create character
-  createPersonage(name:string, atk:string, int:string, vida:string, user:string, pass:string) {
+  createPersonage(name:string, attack:string, int:string, vida:string, user:string, pass:string) {
     let dataToSend: FormData = new FormData();
 
     dataToSend.append('name', name);
-    dataToSend.append('atk', atk);
+    dataToSend.append('atk', attack);
     dataToSend.append('isMonster', 'false');
     dataToSend.append('int', int);
     dataToSend.append('vida', vida);
@@ -69,9 +69,10 @@ export class RgpinfoService {
  }
 
   //Get personagem por id
-  getpersonageID(id) {
-    return this.http.get(this.linkCharId + id);
-  }
+  getcharacter(id : String)
+ {
+    return this.http.get(this.linkGetChar +id);
+ }
 
   //Get inimigo
   getinimigo() {
@@ -79,7 +80,7 @@ export class RgpinfoService {
   }
 
   //Get gun
-  getgun(id :String)
+  getgun(id : String)
   {
     return this.http.get(this.linkgetArma);
   }

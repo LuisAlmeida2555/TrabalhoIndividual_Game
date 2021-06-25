@@ -7,7 +7,6 @@ export class PlayerinfoService {
 
   constructor() { }
 
-   pointsEvolucao: number=2;
    backgroundImg:any="";
    password: any;
    username: any;

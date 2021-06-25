@@ -10,6 +10,10 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { CreatepersoComponent } from './components/createperso/createperso.component';
 import { RegisterComponent } from './components/register/register.component';
+import { PersonagemComponent } from './components/personagem/personagem.component';
+import { CreategunComponent } from './components/creategun/creategun.component';
+import { GunComponent } from './components/gun/gun.component';
+import { ArenaComponent } from './components/arena/arena.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { RegisterComponent } from './components/register/register.component';
     HomeComponent,
     LoginComponent,
     CreatepersoComponent,
-    RegisterComponent
+    RegisterComponent,
+    PersonagemComponent,
+    CreategunComponent,
+    GunComponent,
+    ArenaComponent
   ],
   imports: [
     BrowserModule,

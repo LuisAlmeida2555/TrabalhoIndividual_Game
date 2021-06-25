@@ -16,13 +16,14 @@ export class RegisterComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  //Registo o novo user
   signup()
   {
     this.registoservice.SignUp(this.name,this.pass).subscribe(data => console.log(data));
   }
 
+  //Declaracao
   name :string = "";
   pass :string  =  "";
-
 
 }

@@ -1,0 +1,27 @@
+<div class="image-container">
+  <div class="Personagem-form">
+    <form>
+        <div class="titulo">
+            <span>Personagem</span>
+        </div>
+        <div class="form-group">
+          <p>Nome: <a id="nome">Ainda nao tem</a></p>
+        </div>
+        <div class="form-group">
+          <p>Vida : <a id="vida">txt</a></p>
+        </div>
+        <div class="form-group">
+          <p>Ataque : <a id="ataque">txt</a></p>
+        </div>
+        <div class="form-group">
+          <p>Inteligência : <a id="inteli">txt</a></p>
+        </div>
+        <div class="form-group">
+          <button [routerLink]="['/createpersonage']" type="button" class="btn btn-block create-personagem">Criar Personagem</button>
+      </div>
+    </form>
+  </div>
+  <div class="Person">
+    <img class="img1" src="../../../assets/media/perso.gif"  width="250"/>
+  </div>
+</div>

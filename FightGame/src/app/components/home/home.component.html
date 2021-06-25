@@ -3,12 +3,11 @@
     <!-- Main component for a primary marketing message or call to action -->
     <div class="jumbotron" >
       <h1>Queres andar à fight com os teus amigos?</h1>
-        <a class="btn btn-lg btn-primary" routerLink="signin" role="button" >SIGN IN &raquo;</a>
-        <a class="btn btn-lg btn-dark" routerLink="signup" role="button" style="margin-left: 40px">SIGN UP &raquo;</a>
+        <a class="btn btn-lg btn-primary" (click) ="gotosignIn()" role="button" >SIGN IN &raquo;</a>
+        <a class="btn btn-lg btn-dark" (click) ="gotosignUp()" role="button" style="margin-left: 40px">SIGN UP &raquo;</a>
     </div>
     <div class="gif-container">
-      <img class="img1" src="../../../assets/media/lutar.gif" alt="this slowpoke moves"  width="445" />
-      <img class="img2" src="../../../assets/media/lutar.gif" alt="this slowpoke moves"  width="445" />
+      <img class="img1" src="../../../assets/media/lutar.gif" alt="this slowpoke moves"  width="572"/>
     </div>
   </div>
 </div>

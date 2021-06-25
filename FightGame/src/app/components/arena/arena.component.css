@@ -1,0 +1,56 @@
+body{
+  background-color: #dee9ff;
+}
+
+.image-container{
+  padding-left: 220px;
+  background-image: url(../../../assets/media/arena.png);
+  height: 768px;
+}
+
+.btn-container{
+  margin-top: 300px;
+  margin-left: 560px;
+  position: absolute;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.player1{
+  margin-top: 395px;
+  margin-left: 195px;
+  position: absolute;
+
+}
+
+.player1 p{
+  margin-top: -160px;
+  margin-left: 45%;
+  position: absolute;
+  font-weight: 900;
+}
+
+.player2{
+  margin-top: 395px;
+  margin-left: 700px;
+  position: absolute;
+}
+
+.player2 p{
+  margin-top: -160px;
+  margin-left: 45%;
+  position: absolute;
+  font-weight: 900;
+}
+
+.btnfight{
+  border-radius: 12px;
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;
+}
+
+.btnfight:hover {
+  background-color: #008CBA;
+  color: white;
+}

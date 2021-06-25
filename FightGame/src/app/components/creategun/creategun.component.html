@@ -1,0 +1,27 @@
+<div class="image-container">
+  <div class="registration-form">
+    <form>
+        <div class="titulo">
+            <span>Cria a tua arma</span>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control item" placeholder="Username" [(ngModel)]="username">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control item" placeholder="Password" [(ngModel)]="password">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control item" placeholder="Nome Personagem" [(ngModel)]="nome">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control item" placeholder="ID Personagem" [(ngModel)]="idPersonagem">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control item" placeholder="Tipo de Arma" [(ngModel)]="tipoPersonagem">
+      </div>
+        <div class="form-group">
+            <button type="button" class="btn btn-block create-arma" (click)="registarArma()">Create Arma</button>
+        </div>
+    </form>
+  </div>
+</div>
